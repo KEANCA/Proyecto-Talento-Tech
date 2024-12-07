@@ -1,0 +1,66 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .hero .btn-primary {
+    margin-top: 20px;
+  }
+  
+  /* Cards */
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+/* Catalogo de Productos */
+.card {
+  margin-bottom: 20px;
+  border: none;
+}
+
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.add-to-cart {
+  margin-top: 10px;
+}
+  
