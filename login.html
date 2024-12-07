@@ -7,45 +7,22 @@
     <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 <body>
-    <main></main>
-    <footer>
-        <div class="container">
-            <!-- Columna 1 -->
-            <div class="column">
-                <h2>HolyCookies</h2>
-                <p class="text-light">Valledupar - Cesar - Colombia</p>
-                <p>+573045579962</p>
-                <p><a href="mailto:Holycookiescol@gmail.com">Holycookiescol@gmail.com</a></p>
-            </div>
-    
-            <!-- Columna 2 -->
-            <div class="column">
-                <h2>Productos</h2>
-                <ul>
-                    <li><a href="#">Galletas Rellenas</a></li>
-                    <li><a href="#">Galleta Cheeseguava</a></li>
-                    <li><a href="#">Todo Tipo de Galletas!!!</a></li>
-                    <li><a href="#">Helado</a></li>
-                </ul>
-            </div>
-    
-            <!-- Columna 3 -->
-            <div class="column">
-                <h2>Más información</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">A cerca de</a></li>
-                    <li><a href="#">Compras</a></li>
-                    <li><a href="#">Productos</a></li>
-                </ul>
-            </div>
+    <!-- Video de fondo -->
+    <video class="video-fondo" autoplay muted loop>
+        <source src="assets/img/video/video Galletas.mp4" type="video/mp4">
+    </video>
+
+    <main>
+        <div class="login-container">
+            <h2 id="titulo">Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p>Aún no te encuentras registrado?</p>
+            <a href="CreateAccount.html">Regístrate aquí</a>
         </div>
-    
-        <!-- Copyright -->
-        <div class="copyright">
-            Copyright © 2024 - HolyCookies
-        </div>
-    </footer>
-    
+    </main>
 </body>
 </html>
