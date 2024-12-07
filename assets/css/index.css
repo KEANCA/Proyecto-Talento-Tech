@@ -5,15 +5,12 @@ body {
   padding: 0;
   background-color: #f4e8c8;
 }
-/*Navbar */
-.nav {
-  background-color: #2596be;
-}
+
 /* Hero Section */
 .hero {
-  background: url(https://www.instagram.com/p/CO_RXZ0lmdG/?hl=es) no-repeat center center/cover;
-  color: rgb(179, 70, 70);
-  padding: 100px 20px;
+  background: url(/assets/img/Galletas/Header.jpg) no-repeat center center/cover;
+  color:#f4e8c8;
+  padding: 180px 20px;
   text-align: center;
   
 }
