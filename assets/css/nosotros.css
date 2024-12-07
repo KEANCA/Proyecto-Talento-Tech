@@ -1,0 +1,38 @@
+header {
+    background-image: url('/assets/img/nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #1c1e21;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    position: relative;
+}   
+
+/* Copyright */
+footer .copyright {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
