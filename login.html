@@ -12,17 +12,35 @@
         <source src="assets/img/video/video Galletas.mp4" type="video/mp4">
     </video>
 
-    <main>
-        <div class="login-container">
-            <h2 id="titulo">Iniciar Sesión</h2>
-            <form id="loginForm">
-                <input type="email" id="login-email" placeholder="Correo electrónico" required>
-                <input type="password" id="login-password" placeholder="Contraseña" required>
-                <button type="submit">Ingresar</button>
-            </form>
-            <p>Aún no te encuentras registrado?</p>
-            <a href="CreateAccount.html">Regístrate aquí</a>
+    <main class="main-container">
+        <div class="form-container">
+            <!-- Contenedor para Login -->
+            <div class="login-container">
+                <h2 id="titulo">Iniciar Sesión</h2>
+                <form id="loginForm">
+                    <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                    <button type="submit">Ingresar</button>
+                </form>
+                <p>Aún no te encuentras registrado?</p>
+                <button id="goToRegister">Regístrate aquí</button>
+            </div>
+
+            <!-- Contenedor para Registro -->
+            <div class="register-container">
+                <h2 id="titulo">Crear Cuenta</h2>
+                <form id="registerForm">
+                    <input type="text" id="register-name" placeholder="Nombre completo" required>
+                    <input type="email" id="register-email" placeholder="Correo electrónico" required>
+                    <input type="password" id="register-password" placeholder="Contraseña" required>
+                    <input type="text" id="register-adress" placeholder="">
+                    <button type="submit">Registrarse</button>
+                </form>
+                <p>¿Ya tienes una cuenta?</p>
+                <button id="goToLogin">Iniciar Sesión</button>
+            </div>
         </div>
     </main>
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
