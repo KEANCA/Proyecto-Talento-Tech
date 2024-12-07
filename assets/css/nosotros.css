@@ -1,38 +1,94 @@
-header {
-    background-image: url('/assets/img/nosotros.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* General */
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #28a745;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin: 0; 
     padding: 0;
 }
 
-header h1 {
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    font-size: 48px;
-    text-transform: uppercase;
+.hero .image-container {
+    display: flex;
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
 }
 
+.hero-image {
+    width: 33.33%; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Título "Nosotros" */
+.hero #title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+}
+
+.about-us h2, .about-us h3 {
+    color: #333;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
 footer {
     background-color: #1c1e21;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    color: white;
     padding: 20px;
-    position: relative;
-}   
-
-/* Copyright */
-footer .copyright {
     text-align: center;
-    padding: 10px 0;
-    margin-top: 5px;
+}
+
+footer .copyright {
     font-size: 0.9rem;
 }
