@@ -67,16 +67,52 @@ body {
     padding: 20px;
     margin: 20px auto;
     width: 80%;
-    text-align: center;
 }
 
-.about-us h2, .about-us h3 {
+.about-section, .history-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Text Content */
+.text-content {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-content h2, .text-content h3 {
     color: #333;
 }
 
-.about-us p {
+.text-content p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Images */
+.about-image, .history-image {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* Layout Adjustments */
+.about-section .text-content {
+    text-align: left; /* Texto alineado a la izquierda en "¿Quiénes somos?" */
+}
+
+.history-section .text-content {
+    text-align: center; /* Texto centrado en "Historia" */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.history-image {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 
 /* Footer */
