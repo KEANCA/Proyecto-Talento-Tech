@@ -11,19 +11,67 @@ h1, h2 {
     color: #333;
 }
 
-/* Header */
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 20px;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #641314;
+    padding: 0 10px;
+  }
+  
+  
+  .navbar a, .dropdown .dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-svg {
+    margin-left: auto;
+    padding: 10px;
+  }
+  
+  .navbar-svg img {
+    height: 30px; 
+    width: auto;
+    cursor: pointer;
+  }
+.navbar-svg:hover {
+    background-color: transparent;
+}
+    
+  
+.navbar > a:not(.navbar-svg):hover, 
+.navbar > .dropdown:hover .dropbtn {
+    background-color: #f4e8c8; 
+    border-radius: 5px;
 }
 
-header h1 {
+  
+  .dropdown{
+    overflow: hidden;
+    float: left;
+  }
+  
+  .dropdown .dropbtn{
+  
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
     margin: 0;
-}
+  
+  }
+  
+  .dropdown:hover{
+       display: block; 
+  }
 
 .cart-header {
     display: flex;
@@ -35,6 +83,13 @@ header h1 {
     position: relative;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+#cart-container:hover {
+    background-color: #f4e8c8;
+    border-radius: 5px;
+    padding: 5px; 
+    transition: background-color 0.3s ease; 
 }
 
 #carrito-value {
