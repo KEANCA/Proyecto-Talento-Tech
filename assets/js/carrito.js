@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const baseDeDatos = [
-        { id: 1, nombre: 'Terreneitor: El Rey', precio: 156370, imagen: './assets/img/Terreneitor.jpg', categoria: 'juguetes' },
-        { id: 2, nombre: 'Mochilas Wayuu', precio: 270000, imagen: './assets/img/mochila.jpg', categoria: 'mochilas' }
+        { id: 1, nombre: 'Galleta de Nutella', precio: 1000, imagen: './assets/img/Galletas/Nutella.jpg'},
+        { id: 2, nombre: 'Galleta de Mashmelo', precio: 2000, imagen: './assets/img/Galletas/Masmelo.jpg'},
+        { id: 3, nombre: 'Galleta Red Velvet', precio: 1500, imagen: './assets/img/Galletas/RedVelvet.jpg'},
+        { id: 4, nombre: 'Galleta de Bocadillo y Queso', precio: 1800, imagen: './assets/img/Galletas/Bocadillo y queso.jpg'},
+        { id: 5, nombre: 'Galleta de Macadamia', precio: 2200, imagen: './assets/img/Galletas/Macadamia.jpg'},
+        { id: 6, nombre: 'Galleta de Cholocolate y Arequipe', precio: 2000, imagen: './assets/img/Galletas/Arequipe.jpg'},
+        { id: 7, nombre: 'HolyBox', precio: 5000, imagen: './assets/img/Galletas/HolyBox.jpg'}
     ];
 
     let carrito = [];
