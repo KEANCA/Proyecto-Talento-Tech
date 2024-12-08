@@ -21,6 +21,7 @@ body {
   padding: 14px 16px;
   font-size: 16px;
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-svg {
@@ -34,8 +35,8 @@ body {
   cursor: pointer;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .navbar-svg:hover img {
-  background-color: #f4e8c8;; 
+.navbar a:hover, .dropdown:hover .dropbtn, .navbar-svg :hover img {
+  background-color: #f4e8c8; 
   border-radius: 5px;
 }
 
@@ -55,10 +56,6 @@ body {
   font-family: inherit;
   margin: 0;
 
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn{
-  background-color: #f4e8c8;
 }
 
 .dropdown:hover{
