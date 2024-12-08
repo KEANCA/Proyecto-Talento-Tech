@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificaciones de Galletas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/galletas.css">
+    <style>
+        /* Estilos Combinados */
+
+        body {
+            background-color: #fdf2e9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 2rem auto;
+            border-radius: 8px;
+        }
+
+        .product-image-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .product-title {
+            font-size: 2rem;
+            color: #6a4c3a;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #d9534f;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            font-size: 1.25rem;
+            color: #ffcc00;
+        }
+
+        .reviews {
+            margin-left: 0.5rem;
+            color: #555;
+        }
+
+        .product-description,
+        .product-specifications {
+            margin-bottom: 1.5rem;
+        }
+
+        .product-description h2,
+        .product-specifications h2 {
+            font-size: 1.25rem;
+            color: #8b5d3b;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-specifications ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .quantity-adjuster {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .quantity-btn {
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .quantity-btn:hover {
+            background-color: #c9302c;
+        }
+
+        .quantity-input {
+            width: 3rem;
+            text-align: center;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .buy-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: #6a4c3a;
+            color: #fff;
+            font-size: 1rem;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #8b5d3b;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            border-radius: 8px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="product-container">
+        <!-- Imagen del Producto -->
+        <div class="product-image-section">
+            <img src="/assets/img/Galletas/Masmelo.jpg" alt="Imagen de Galletas" class="product-image" onclick="viewImage(this)">
+            <div class="product-thumbnails">
+              
+            </div>
+        </div>
+
+        <!-- Detalles del Producto -->
+        <div class="product-details">
+            <h1 class="product-title">Galleta de Masmelo</h1>
+            <p class="product-price">$25.000</p>
+
+            <!-- Calificación -->
+            <div class="product-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(85 Comentarios)</span>
+            </div>
+
+            <!-- Descripción -->
+            <div class="product-description">
+                <h2>Descripción:</h2>
+                <p>Galleta de chocolate con relleno de masmelo.</p>
+            </div>
+
+            <!-- Especificaciones -->
+            <div class="product-specifications">
+                <h2>Especificaciones:</h2>
+                <ul>
+                    <li>Fabricante: Cookie Factory</li>
+                    <li>Presentación: Paquete de 12 unidades</li>
+                    <li>100% ingredientes naturales</li>
+                    <li>Apto para vegetarianos</li>
+                    <li>Sin conservantes añadidos</li>
+                </ul>
+            </div>
+
+            <!-- Ajuste de Cantidad -->
+            <div class="quantity-adjuster">
+                <button class="quantity-btn decrease">-</button>
+                <input type="number" value="1" class="quantity-input">
+                <button class="quantity-btn increase">+</button>
+            </div>
+
+            <!-- Botón de Compra -->
+            <button class="buy-button">Comprar</button>
+        </div>
+    </main>
+
+    <!-- Modal para ver imágenes ampliadas -->
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function viewImage(image) {
+            document.getElementById("imageModal").style.display = "block";
+            document.getElementById("modalImage").src = image.src;
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
