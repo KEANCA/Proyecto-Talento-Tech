@@ -34,11 +34,17 @@ body {
   width: auto;
   cursor: pointer;
 }
+.navbar-svg:hover {
+  background-color: transparent;
+}
+  
 
-.navbar a:hover, .dropdown:hover .dropbtn, .navbar-svg :hover img {
+.navbar > a:not(.navbar-svg):hover, 
+.navbar > .dropdown:hover .dropbtn {
   background-color: #f4e8c8; 
   border-radius: 5px;
 }
+
 
 .dropdown{
   overflow: hidden;
@@ -61,6 +67,42 @@ body {
 .dropdown:hover{
      display: block; 
 }
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#cart-container {
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#cart-container:hover {
+  background-color: #f4e8c8;
+  border-radius: 5px;
+  padding: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+#carrito-value {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 0.8rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
 /* Hero Section */
 .hero {
   background: url(/assets/img/Galletas/Header.jpg) no-repeat center center/cover;
