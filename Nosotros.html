@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="stylesheet" href="./assets/css/nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body style="background-color: #f4e8c8;">
     <nav class="navbar" style="background-color: #641314;">
-        <a href="#">Inicio</a>
+        <a href="./index.html">Inicio</a>
         <div class="dropdown">
-            <button class="dropbtn">Contactanos</button>
+            <button class="dropbtn" onclick="window.location.href='./acerca_de.html'">Contactanos</button>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Nosotros</button>
+            <button class="dropbtn" onclick="window.location.href='./Nosotros.html'">Nosotros</button>
         </div>
-        <a href="#" class="navbar-svg">
-            <img src="./assets/img/Carrito.png" alt="carrito" />
+        <a href="./carrito.html" class="navbar-svg">
+            <div class="cart-header">
+                <!-- Contador de Visitas -->
+                <p>Visitas al sitio: <span id="contador">0</span></p>
+                <!-- Icono del Carrito -->
+                <div id="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="carrito-value">0</span>
+                </div>
+            </div>
         </a>
-    </nav>    
+    </nav>   
     <main>
         <section class="hero">
             <div class="image-container">
@@ -56,5 +65,7 @@
             <p>&copy; 2024 Holy Cookies | Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="./assets/js/contadorvisitas.js"></script>
+    <script src="./assets/js/carrito.js"></script>
 </body>
 </html>
