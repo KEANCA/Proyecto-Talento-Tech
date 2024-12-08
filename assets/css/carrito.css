@@ -182,16 +182,21 @@ main {
     background: #a71d2a;
 }
 
-
-
-
-
-
-
 /* Filtros */
 #filtro {
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+footer {
+    background-color: #1c1e21;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .copyright {
+    font-size: 0.9rem;
 }
