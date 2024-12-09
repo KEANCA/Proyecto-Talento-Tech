@@ -13,21 +13,21 @@
     </video>
 
     <main class="main-container">
-        <div class="form-container">
+        <div class="form-container" >
             <!-- Contenedor para Login -->
-            <div class="login-container">
+            <div class="login-container" style="background-color: #f4e8c8;">
                 <h2>Iniciar Sesión</h2>
                 <form id="loginForm">
                     <input type="email" id="login-email" placeholder="Correo electrónico" required>
                     <input type="password" id="login-password" placeholder="Contraseña" required>
-                    <button type="submit">Ingresar</button>
+                    <button type="submit" onclick="window.location.href='/index.html'">Ingresar</button>
                 </form>
                 <p>¿Aún no tienes cuenta?</p>
                 <button id="goToRegister">Regístrate aquí</button>
             </div>
 
             <!-- Contenedor para Registro -->
-            <div class="register-container">
+            <div class="register-container"style="background-color: #f4e8c8;">
                 <h2>Crear Cuenta</h2>
                 <form id="registerForm">
                     <input type="text" id="register-name" placeholder="Nombre completo" required>
