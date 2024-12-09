@@ -22,16 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
         baseDeDatos.forEach((producto) => {
             const nodo = `
                 <div class="product">
-                    <a href="${producto.url}" target="_blank">
+                    <a href="${producto.url}">
                         <img src="${producto.imagen}" alt="${producto.nombre}">
                     </a>
-                    <h3>${producto.nombre}</h3>
+                    <h3>
+                        <a href="${producto.url}">${producto.nombre}</a>
+                    </h3>
                     <p>${producto.precio} ${divisa}</p>
                     <button class="btn-agregar" data-id="${producto.id}">Agregar al Carrito</button>
                 </div>`;
             DOMitems.insertAdjacentHTML('beforeend', nodo);
         });
-
+    
         document.querySelectorAll('.btn-agregar').forEach((btn) => {
             btn.addEventListener('click', (e) => {
                 const id = parseInt(e.target.dataset.id);
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 actualizarCarrito();
             });
         });
-    }
+    }    
 
     function actualizarCarrito() {
         DOMcarrito.innerHTML = '';
