@@ -283,7 +283,18 @@
             font-weight: bold;
             cursor: pointer;
         }
+         /* desde aqui */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
 
+        main {
+            flex: 1; /* Empuja al footer hacia abajo */
+        }
+        /* hasta aqui */
         footer {
         background-color: #1c1e21;
         color: white;

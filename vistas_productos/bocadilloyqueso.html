@@ -281,6 +281,17 @@
             cursor: pointer;
         }
 
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1; /* Empuja al footer hacia abajo */
+        }
+
         footer {
         background-color: #1c1e21;
         color: white;
