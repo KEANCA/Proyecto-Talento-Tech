@@ -17,6 +17,103 @@
             padding: 0;
         }
 
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #641314;
+        padding: 0 10px;
+    }
+    
+    
+    .navbar a, .dropdown .dropbtn {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 16px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-svg {
+        margin-left: auto;
+        padding: 10px;
+    }
+    
+    .navbar-svg img {
+        height: 30px; 
+        width: auto;
+        cursor: pointer;
+    }
+    .navbar-svg:hover {
+        background-color: transparent;
+    }
+        
+    
+    .navbar > a:not(.navbar-svg):hover, 
+    .navbar > .dropdown:hover .dropbtn {
+        background-color: #f4e8c8; 
+        border-radius: 5px;
+    }
+
+    
+    .dropdown{
+        overflow: hidden;
+        float: left;
+    }
+    
+    .dropdown .dropbtn{
+    
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    
+    }
+    
+    .dropdown:hover{
+        display: block; 
+    }
+
+    .cart-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #cart-container {
+        position: relative;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #cart-container:hover {
+        background-color: #f4e8c8;
+        border-radius: 5px;
+        padding: 5px; 
+        transition: background-color 0.3s ease; 
+    }
+
+    #carrito-value {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background: red;
+        color: white;
+        font-size: 0.8rem;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+
         .product-container {
             display: flex;
             flex-wrap: wrap;
@@ -186,11 +283,40 @@
             font-weight: bold;
             cursor: pointer;
         }
+        footer {
+        background-color: #1c1e21;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .copyright {
+        font-size: 0.9rem;
+    }
     </style>
 </head>
 
 <body>
-
+    <nav class="navbar" style="background-color: #641314;">
+        <a href="/index.html">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='/acerca_de.html'">Contactanos</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='/Nosotros.html'">Nosotros</button>
+        </div>
+        <a href="/carrito.html" class="navbar-svg">
+            <div class="cart-header">
+                <!-- Contador de Visitas -->
+                <p>Visitas al sitio: <span id="contador">0</span></p>
+                <!-- Icono del Carrito -->
+                <div id="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="carrito-value">0</span>
+                </div>
+            </div>
+        </a>
+    </nav>  
     <main class="product-container">
         <!-- Imagen del Producto -->
         <div class="product-image-section">
@@ -247,7 +373,13 @@
             document.getElementById("imageModal").style.display = "none";
         }
     </script>
-
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Holy Cookies | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="./assets/js/contadorvisitas.js"></script>
+    <script src="./assets/js/carrito.js"></script>
 </body>
 
 </html>
