@@ -113,7 +113,6 @@
         border-radius: 50%;
         font-weight: bold;
     }
-
         .product-container {
             display: flex;
             flex-wrap: wrap;
@@ -161,13 +160,13 @@
 
         .product-title {
             font-size: 2rem;
-            color: #6a4c3a;
+            color: rgb(179, 70, 70);
             margin-bottom: 1rem;
         }
 
         .product-price {
             font-size: 1.5rem;
-            color: #d9534f;
+            color:rgb(179, 70, 70);
             font-weight: bold;
             margin-bottom: 1rem;
         }
@@ -215,7 +214,7 @@
         }
 
         .quantity-btn {
-            background-color: #d9534f;
+            background-color: rgb(179, 70, 70);
             color: #fff;
             border: none;
             padding: 0.5rem 1rem;
@@ -240,7 +239,7 @@
             display: block;
             width: 100%;
             padding: 1rem;
-            background-color: #6a4c3a;
+            background-color: rgb(179, 70, 70);
             color: #fff;
             font-size: 1rem;
             text-align: center;
@@ -251,7 +250,8 @@
         }
 
         .buy-button:hover {
-            background-color: #8b5d3b;
+            background-color: #c9302c;
+            
         }
 
         .modal {
@@ -282,15 +282,27 @@
             font-weight: bold;
             cursor: pointer;
         }
+        html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        }
+
+        main {
+            flex: 1; /* Empuja al footer hacia abajo */
+        }
+
         footer {
         background-color: #1c1e21;
         color: white;
         padding: 20px;
         text-align: center;
-    }
+        }
 
     footer .copyright {
         font-size: 0.9rem;
+        
     }
     </style>
 </head>
@@ -332,13 +344,13 @@
             <!-- Calificación -->
             <div class="product-rating">
                 <span class="stars">⭐⭐⭐⭐⭐</span>
-                <span class="reviews">(34 Comentarios)</span>
+                <span class="reviews">(134 Comentarios)</span>
             </div>
 
             <!-- Descripción -->
             <div class="product-description">
                 <h2>Descripción:</h2>
-                <p>Déjate seducir por el sabor irresistible de nuestras galletas artesanales. Perfectas para acompañar tu café o té favorito.</p>
+                <p>Déjate seducir por el encanto de nuestra galleta Red Velvet: un clásico reinventado con un toque de suavidad y dulzura. Su textura aterciopelada y su vibrante color hacen de cada mordisco una experiencia inolvidable. ¡El placer perfecto para los amantes de lo especial!</p>
             </div>
 
             <!-- Ajuste de Cantidad -->
