@@ -25,9 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="${producto.url}">
                         <img src="${producto.imagen}" alt="${producto.nombre}">
                     </a>
-                    <h3>
-                        <a href="${producto.url}">${producto.nombre}</a>
-                    </h3>
+                    <h3>${producto.nombre}</h3>
                     <p>${producto.precio} ${divisa}</p>
                     <button class="btn-agregar" data-id="${producto.id}">Agregar al Carrito</button>
                 </div>`;
