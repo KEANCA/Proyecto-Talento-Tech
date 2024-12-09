@@ -1,0 +1,2 @@
+Juan Perez;juan@example.com;1234;Calle Falsa 123;555-1234
+Maria Lopez;maria@example.com;abcd;Avenida Real 456;555-5678
