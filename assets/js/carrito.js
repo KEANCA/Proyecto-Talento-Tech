@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const baseDeDatos = [
-        { id: 1, nombre: 'Galleta de Nutella', precio: 1000, imagen: './assets/img/Galletas/Nutella.jpg'},
-        { id: 2, nombre: 'Galleta de Mashmelo', precio: 2000, imagen: './assets/img/Galletas/Masmelo.jpg'},
-        { id: 3, nombre: 'Galleta Red Velvet', precio: 1500, imagen: './assets/img/Galletas/RedVelvet.jpg'},
-        { id: 4, nombre: 'Galleta de Bocadillo y Queso', precio: 1800, imagen: './assets/img/Galletas/Bocadillo y queso.jpg'},
-        { id: 5, nombre: 'Galleta de Macadamia', precio: 2200, imagen: './assets/img/Galletas/Macadamia.jpg'},
-        { id: 6, nombre: 'Galleta de Cholocolate y Arequipe', precio: 2000, imagen: './assets/img/Galletas/Arequipe.jpg'},
-        { id: 7, nombre: 'HolyBox', precio: 5000, imagen: './assets/img/Galletas/HolyBox.jpg'}
+        { id: 1, nombre: 'Galleta de Nutella', precio: 1000, imagen: './assets/img/Galletas/Nutella.jpg', url: './vistas_productos/galleta1.html' },
+        { id: 2, nombre: 'Galleta de Mashmelo', precio: 2000, imagen: './assets/img/Galletas/Masmelo.jpg', url: './vistas_productos/galleta2.html' },
+        { id: 3, nombre: 'Galleta Red Velvet', precio: 1500, imagen: './assets/img/Galletas/RedVelvet.jpg', url: './vistas_productos/RedVelvet.html' },
+        { id: 4, nombre: 'Galleta de Bocadillo y Queso', precio: 1800, imagen: './assets/img/Galletas/Bocadillo y queso.jpg', url: './vistas_productos/bocadilloyqueso.html' },
+        { id: 5, nombre: 'Galleta de Macadamia', precio: 2200, imagen: './assets/img/Galletas/Macadamia.jpg', url: './vistas_productos/Macadamia.html' },
+        { id: 6, nombre: 'Galleta de Chocolate y Arequipe', precio: 2000, imagen: './assets/img/Galletas/Arequipe.jpg', url: './vistas_productos/Chocolateyarequipe.html' },
+        { id: 7, nombre: 'HolyBox', precio: 5000, imagen: './assets/img/Galletas/HolyBox.jpg', url: './vistas_productos/Holybox.html' }
     ];
 
     let carrito = [];
@@ -16,14 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
     const DOMcarritoValue = document.querySelector('#carrito-value');
-    const miLocalStorage = window.localStorage;
 
     function renderizarProductos() {
         DOMitems.innerHTML = '';
         baseDeDatos.forEach((producto) => {
             const nodo = `
                 <div class="product">
-                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                    <a href="${producto.url}" target="_blank">
+                        <img src="${producto.imagen}" alt="${producto.nombre}">
+                    </a>
                     <h3>${producto.nombre}</h3>
                     <p>${producto.precio} ${divisa}</p>
                     <button class="btn-agregar" data-id="${producto.id}">Agregar al Carrito</button>
