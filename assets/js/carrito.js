@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 5, nombre: 'Galleta de Macadamia', precio: 2200, imagen: './assets/img/Galletas/Macadamia.jpg', url: './vistas_productos/Macadamia.html', categoria: 'Galletas' },
         { id: 6, nombre: 'Galleta de Chocolate y Arequipe', precio: 2000, imagen: './assets/img/Galletas/Arequipe.jpg', url: './vistas_productos/Chocolateyarequipe.html', categoria: 'Galletas' },
         { id: 7, nombre: 'HolyBox', precio: 5000, imagen: './assets/img/Galletas/HolyBox.jpg', url: './vistas_productos/Holybox.html', categoria: 'Galletas' },
-        { id: 8, nombre: 'ChocoNutella', precio: 14000, imagen: './assets/img/chocotela.jpg', url: '#', categoria: 'Postres' },
-        { id: 9, nombre: 'ChipChocoTela', precio: 14000, imagen: './assets/img/chocochip.jpg', url: '#', categoria: 'Postres' },
-        { id: 10, nombre: 'RedTela', precio: 12000, imagen: './assets/img/chocoquipe.jpg', url: '#', categoria: 'Postres' },
-        { id: 11, nombre: 'ChocoLipe', precio: 12000, imagen: './assets/img/postre1.jpg', url: '#', categoria: 'Postres' },
-        { id: 12, nombre: 'Vaso de Helado', precio: 5000, imagen: './assets/img/helado.jpg', url: '#', categoria: 'Helados' }
+        { id: 8, nombre: 'ChocoNutella', precio: 14000, imagen: './assets/img/chocotela.jpg', url: './vistas_productos/ChocoNutella.html', categoria: 'Postres' },
+        { id: 9, nombre: 'ChipChocoTela', precio: 14000, imagen: './assets/img/chocochip.jpg', url: './vistas_productos/ChipChocoTela.html', categoria: 'Postres' },
+        { id: 10, nombre: 'RedTela', precio: 12000, imagen: './assets/img/chocoquipe.jpg', url: './vistas_productos/RedTela.html', categoria: 'Postres' },
+        { id: 11, nombre: 'ChocoLipe', precio: 12000, imagen: './assets/img/postre1.jpg', url: './vistas_productos/ChocoLipe.html', categoria: 'Postres' },
+        { id: 12, nombre: 'Vaso de Helado', precio: 5000, imagen: './assets/img/helado.jpg', url: './vistas_productos/Vaso de Helado.html', categoria: 'Helados' }
     ];
 
     let carrito = JSON.parse(localStorage.getItem('carrito')) || []; 
