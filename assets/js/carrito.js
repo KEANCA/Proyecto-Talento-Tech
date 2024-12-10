@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 9, nombre: 'ChipChocoTela', precio: 14000, imagen: './assets/img/chocochip.jpg', url: './vistas_productos/ChipChocoTela.html', categoria: 'Postres' },
         { id: 10, nombre: 'RedTela', precio: 12000, imagen: './assets/img/chocoquipe.jpg', url: './vistas_productos/RedTela.html', categoria: 'Postres' },
         { id: 11, nombre: 'ChocoLipe', precio: 12000, imagen: './assets/img/postre1.jpg', url: './vistas_productos/ChocoLipe.html', categoria: 'Postres' },
-        { id: 12, nombre: 'Vaso de Helado', precio: 5000, imagen: './assets/img/helado.jpg', url: './vistas_productos/Vaso de Helado.html', categoria: 'Helados' }
+        { id: 12, nombre: 'Vaso de Helado', precio: 2000, imagen: './assets/img/helado.jpg', url: './vistas_productos/Vaso de Helado.html', categoria: 'Helados' }
     ];
 
     let carrito = JSON.parse(localStorage.getItem('carrito')) || []; 
